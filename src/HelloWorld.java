@@ -9,4 +9,8 @@ public class HelloWorld {
         System.out.println("Hello World");
     }
     List myFirstListInVsCode = new ArrayList();
+
+    public static String sayName(){
+        return "Ben";
+    }
 }
