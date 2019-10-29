@@ -1,6 +1,6 @@
 # Pre-Code Review Checklist
 
-## Check-it Before you WRECK-IT!!!
+## Before opening a pull request
 - [ ] Pull destination branch in to source branch
 - [ ] Verify merge doesn't have merge conflicts
 - [ ] Verify functionality is still intact
@@ -28,7 +28,7 @@
 - [ ] Verify pull request is only the required work of the ticket
 - [ ] Verify correct reviewers team are attached to pull request
 
-## Test Quality
+## Unit and Regression Test Quality
 - [ ] Tests are atomic
 - [ ] Tests are documented with pre & post conditions and test steps 
 - [ ] Tests cover all public methods
@@ -38,20 +38,10 @@
 - [ ] Bug fixes have a test to cover the condition
 - [ ] Units test are separated from integration tests
 - [ ] Verify assertion are specific and valid
-
-## Regression Test
 - [ ] Verify Regression Suite still works
 - [ ] Verify Code quality metrics improved or stayed the same
 
 ## Code Quality 
-
-### Comments
-
-- [ ] Information is appropriate
-- [ ] No obsolete comments
-- [ ] No redundant comments
-- [ ] Well written comments
-- [ ] No commented out code
 
 ### Environment
 - [ ] Build process is one step
@@ -62,6 +52,22 @@
 - [ ] No unused functions
 - [ ] No output arguments
 - [ ] No flag arguments
+
+### Names
+- [ ] Name are descriptive
+- [ ] Names reflect the level of abstraction
+- [ ] Standard nomenclature used as appicable (pattern name  or language convention)
+- [ ] Unambiguous names
+- [ ] Longer names for bigger scope
+- [ ] No encodings (i.e. m_)
+
+### Comments
+
+- [ ] Information is appropriate
+- [ ] No obsolete comments
+- [ ] No redundant comments
+- [ ] Well written comments
+- [ ] No commented out code
 
 ### General
 - [ ] Only one language per source file
@@ -100,20 +106,3 @@
 - [ ] Function only descends one level of abstraction
 - [ ] Configurable data is at high levels
 - [ ] No Transitive Navigation
-
-### Names
-- [ ] Name are descriptive
-- [ ] Names reflect the level of abstraction
-- [ ] Standard nomenclature used as appicable (pattern name  or language convention)
-- [ ] Unambiguous names
-- [ ] Longer names for bigger scope
-- [ ] No encodings (i.e. m_)
-
-### Tests
-- [ ] Sufficient number of test
-- [ ] Coverage tool
-- [ ] Small tests
-- [ ] No ignored tests
-- [ ] Boundary conditions tested
-- [ ] Extra tests around bugs
-- [ ] Tests are fast
